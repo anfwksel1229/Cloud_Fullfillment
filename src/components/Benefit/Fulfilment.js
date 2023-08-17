@@ -7,7 +7,7 @@ import Container03 from '../../components/Benefit/Container03'
 import Container04 from '../../components/Benefit/Container04'
 import Container05 from '../../components/Benefit/Container05'
 import Container06 from '../../components/Benefit/Container06'
-import Footer from '../Footer'
+// import Footer from '../Footer'
 
 function Fulfilment() {
   return (
@@ -19,7 +19,7 @@ function Fulfilment() {
       <Container05 />
       <Container06 />
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

@@ -1,11 +1,19 @@
 #Footer {
   background-color: #1d2938;
+  /*수정사항 추가*/
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
 #Footer .Footer_Wrap {
   width: 100%;
   margin: 0 auto;
   color: #fff;
   padding: 3% 0 4% 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 #Footer .Footer_Wrap > p {
   font-size: 14px;

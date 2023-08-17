@@ -10,6 +10,7 @@ import Container06 from './Main/ScrollContainer/Container06'
 import Container07 from './Main/ScrollContainer/Container07'
 import Container08 from './Main/ScrollContainer/Container08'
 import Container09 from './Main/ScrollContainer/Container09'
+import Footer from '../components/Footer'
 // import Footer from './Footer'
 
 // Import Swiper styles
@@ -110,7 +111,7 @@ function SlideContainer() {
       gsap.set(mainTitle, { y: 50, opacity: 0 })
       const tl = gsap.timeline({ defaults: { ease: 'power3.inOut' } })
       tl.to(mainTitle, { y: 0, opacity: 1, duration: 1 })
-      tl.to(subTitle, { x: 100, opacity: 1, duration: 1.5 }, '-=0.5')
+      tl.to(subTitle, { x: 100, opacity: 1, duration: 1 })
     }
   }
   return (
@@ -154,6 +155,9 @@ function SlideContainer() {
         </SwiperSlide>
         <SwiperSlide style={{ backgroundColor: '#080F2B' }}>
           <Container09 />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Footer />
         </SwiperSlide>
       </Swiper>
     </>
