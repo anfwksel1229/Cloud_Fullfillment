@@ -1,0 +1,30 @@
+#Container06 {
+  width: 80%;
+  margin: 0 auto;
+}
+#Container06 .Container06_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Container06 .Container06_wrap img {
+  width: auto;
+}
+#Container06 .Container06_wrap .Title_wrap {
+  margin-right: 5%;
+}
+#Container06 .Container06_wrap .Title_wrap .Main_title {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: start;
+}
+#Container06 .Container06_wrap .Title_wrap .Main_title span {
+  color: #31d2b5;
+}
+#Container06 .Container06_wrap .Title_wrap .Sub_title {
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  text-align: start;
+}

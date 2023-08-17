@@ -1,0 +1,23 @@
+#Fulfilment-Container02 {
+}
+#Fulfilment-Container02 .Container02_Wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 200px 0 128px 0;
+}
+#Fulfilment-Container02 .Container02_Wrap img {
+  width: 30%;
+}
+#Fulfilment-Container02 .Container02_Wrap .Text_Wrap {
+  background: linear-gradient(to top, #4063fe, #00b6ad);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+#Fulfilment-Container02 .Container02_Wrap .Text_Wrap p {
+  font-weight: 700;
+  font-size: 44px;
+
+  margin: 0 0 0 80px;
+}

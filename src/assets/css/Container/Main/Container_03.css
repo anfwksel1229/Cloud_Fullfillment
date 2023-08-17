@@ -1,0 +1,29 @@
+#Container03 {
+  width: 80%;
+  margin: 0 auto;
+}
+#Container03 .Main_title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+}
+#Container03 .icon_container ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Container03 .icon_container ul li:nth-child(1),
+#Container03 .icon_container ul li:nth-child(2) {
+  margin-right: 97px;
+}
+#Container03 .icon_container ul li div img {
+  width: auto;
+}
+#Container03 .icon_container ul li div p {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+#Container03 .icon_container ul li div p span {
+  color: #31d2b5;
+}

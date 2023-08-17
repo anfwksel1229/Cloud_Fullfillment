@@ -1,0 +1,73 @@
+/* Popup.css */
+
+#PopupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 검은색 배경, 투명도 0.5 */
+  z-index: 998; /* 팝업 아래에 배경이 나타나도록 */
+}
+
+#PopupContent {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding-top: 200px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 999; /* 팝업 위에 나타나도록 */
+  width: 500px;
+}
+#PopupContent > img:nth-child(1) {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+#PopupContent > img:nth-child(2) {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  cursor: pointer;
+}
+#PopupContent .Contents_Wrap {
+  position: relative;
+  background-color: #1d2938;
+  padding: 167px 0 50px;
+  border-radius: 0 0 8px 8px;
+}
+#PopupContent .Contents_Wrapper {
+  width: 100%;
+  background-color: #4a4a4a;
+  padding: 12px 0;
+}
+#PopupContent .Contents_Wrapper p {
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+}
+#PopupContent .Contents_Wrap .Request {
+  color: #fff;
+  font-size: 21.87px;
+  font-weight: 700;
+  background-color: #00c59f;
+  border-radius: 27px;
+  padding: 10px 27px;
+  margin-top: 25px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+#PopupContent .Contents_Wrap img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+}

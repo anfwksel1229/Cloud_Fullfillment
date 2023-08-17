@@ -1,0 +1,36 @@
+#Container09 {
+  width: 100%;
+  position: relative;
+}
+#Container09 img {
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+#Container09 .Container09_wrap {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Container09 .Container09_wrap img {
+  width: auto;
+}
+
+#Container09 .Container09_wrap .Title_wrap .Main_title {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+}
+#Container09 .Container09_wrap .Title_wrap .Main_title span {
+  color: #31d2b5;
+}
+#Container09 .Container09_wrap .Title_wrap .Sub_title {
+  font-weight: 700;
+  font-size: 28px;
+  color: #fff;
+}

@@ -1,0 +1,38 @@
+#Fulfilment-Container05 {
+  background: url(../../../images/Benefit/Contents_bg_03.png) no-repeat;
+  background-size: auto;
+  background-position: right;
+  background-position-y: 60%;
+  height: 512px;
+  position: relative;
+}
+#Fulfilment-Container05 .Container05_Wrap {
+  display: flex;
+  /* align-items: start; */
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#Fulfilment-Container05 .Container05_Wrap img {
+  width: auto;
+}
+#Fulfilment-Container05 .Container05_Wrap .Text_Wrap {
+  text-align: start;
+  margin-left: 80px;
+}
+#Fulfilment-Container05 .Container05_Wrap .Text_Wrap h3 {
+  color: #464453;
+  font-size: 44px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 28px;
+}
+#Fulfilment-Container05 .Container05_Wrap .Text_Wrap p {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 7px;
+  line-height: 32px;
+}

@@ -1,0 +1,63 @@
+#Container02 {
+  width: 80%;
+  margin: 0 auto;
+}
+#Container02 .Main_title {
+  font-size: 44px;
+  font-weight: 700;
+}
+#Container02 .Main_title span.gradient {
+  background: linear-gradient(to right, #00d1ff, #31d2b5);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+#Container02 .Main_title span:last-child {
+  color: #fff;
+}
+#Container02 .Sub_title {
+  color: #71b9b5e5;
+  font-size: 18px;
+  font-weight: 400;
+}
+#Container02 .Soultion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Container02 .Soultion > p:nth-child(1) {
+  background: linear-gradient(to right, #ffffff, #1bc8ff);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 32.94px;
+  font-weight: 700;
+  margin-right: 37px;
+}
+#Container02 .Soultion > p:nth-child(3) {
+  background: linear-gradient(to right, #31d2b5, #ffffff);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 32.94px;
+  font-weight: 700;
+  margin-left: 33px;
+}
+#Container02 .Soultion .Cycle {
+  background-image: url('../../../images/Main/Cycle.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 340px;
+  position: relative;
+}
+#Container02 .Soultion .Cycle p {
+  font-size: 39.53px;
+  font-weight: 700;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}

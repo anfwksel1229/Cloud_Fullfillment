@@ -1,0 +1,94 @@
+#Header {
+  display: flex;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 170px;
+  align-items: center;
+  justify-content: space-around;
+  /* margin: 0 350px; */
+  /* padding: 58px 0 55px 0; */
+  background: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
+}
+#Header .list_wrap {
+  display: flex;
+  align-items: center;
+}
+#Header .list_wrap ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+#Header .list_wrap ul .menu_item {
+  font-size: 14px;
+  padding: 40px 20px;
+  color: #fff;
+  cursor: pointer;
+}
+#Header .list_wrap ul li a {
+  color: #fff;
+}
+
+#Header #Request {
+  margin-left: 40px;
+  font-weight: 700;
+  color: #fff;
+  font-size: 14px;
+  border: 2px solid #31d2b5;
+  padding: 10px 15px 9px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#Header .list_wrap ul li a {
+  color: #fff;
+  text-decoration: none; /* 링크 텍스트 밑줄 제거 */
+  transition: color 0.3s; /* 색상 변경 트랜지션 설정 */
+}
+
+#Header .list_wrap ul li a:hover {
+  color: #31d2b5; /* 마우스 호버 시 색상 변경 */
+}
+#Header .list_wrap ul li .active {
+  color: #31d2b5; /* 방문된 링크의 색상 변경 */
+}
+
+/* 서브메뉴 */
+#Header .submenu {
+  visibility: hidden;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  padding: 10px;
+  width: auto;
+  opacity: 0;
+  transition: opacity 0.2s ease-out, visibility 0s 0.2s;
+  left: 50%; /* 가로 가운데 정렬 */
+  transform: translateX(-50%); /* 가로 중앙 정렬을 위한 변형 */
+  top: 100px; /* 메뉴 아이템 아래로 위치 */
+}
+
+#Header .menu_item:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease-out, visibility 0s;
+}
+
+#Header .menu_item {
+  position: relative;
+}
+
+#Header .submenu > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 348px;
+  justify-content: space-around;
+}
+
+#Header .submenu ul li {
+  color: #fff;
+  margin: 5px 0;
+  cursor: pointer;
+}

@@ -1,0 +1,40 @@
+#Container05 {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+#Container05 .Container05_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Container05 .Container05_wrap img {
+  width: auto;
+}
+#Container05 .Container05_wrap .Title_wrap {
+  margin-left: 10%;
+}
+#Container05 .Container05_wrap .Title_wrap .Main_title {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: end;
+}
+#Container05 .Container05_wrap .Title_wrap .Main_title span {
+  color: #31d2b5;
+}
+#Container05 .Container05_wrap .Title_wrap .Sub_title {
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  text-align: end;
+}
+#Container05 .add_text {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
