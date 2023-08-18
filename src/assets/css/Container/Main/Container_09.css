@@ -1,6 +1,12 @@
+#Last_Wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
 #Container09 {
   width: 100%;
-  position: relative;
+  position: absolute;
+  top: 25%;
 }
 #Container09 img {
   width: auto;
@@ -34,3 +40,54 @@
   font-size: 28px;
   color: #fff;
 }
+/* 
+#Last_Wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+#Last_Wrapper #Container09 {
+  width: 100%;
+  position: relative;
+}
+#Last_Wrapper #Container09 .Container09_wrap > img {
+}
+#Last_Wrapper #Container09 .Container09_wrap .Title_wrap {
+}
+#Last_Wrapper #Container09 .Container09_wrap .Title_wrap .Main_title {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+}
+#Last_Wrapper #Container09 .Container09_wrap .Title_wrap .Main_title span {
+  color: #31d2b5;
+}
+#Last_Wrapper #Container09 .Container09_wrap .Title_wrap .Sub_title {
+  font-weight: 700;
+  font-size: 28px;
+  color: #fff;
+}
+
+#Last_Wrapper #Footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background: #1d2938;
+}
+#Last_Wrapper #Footer .Footer_Wrap {
+  color: #fff;
+}
+#Last_Wrapper #Footer .Footer_Wrap .Contents_Wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Last_Wrapper #Footer .Footer_Wrap .Contents_Wrap > img {
+  width: auto;
+  object-fit: contain;
+}
+#Last_Wrapper #Footer .Footer_Wrap .Contents_Wrap .List_Wrap {
+  display: flex;
+} */

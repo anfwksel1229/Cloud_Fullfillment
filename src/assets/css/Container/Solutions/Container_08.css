@@ -1,0 +1,52 @@
+#Solutions-Container08 {
+  width: 100%;
+  padding: 77px 0;
+}
+#Solutions-Container08 .Container08_Wrap {
+  width: 80%;
+  margin: 0 auto;
+  padding: 191px 0 0px;
+}
+#Solutions-Container08 .Container08_Wrap .Text_Wrap {
+  margin-bottom: 62px;
+}
+#Solutions-Container08 .Container08_Wrap .Text_Wrap > h3:nth-child(1) {
+  font-size: 52px;
+  font-weight: 700;
+  background: linear-gradient(to top, #00afc7, #57ddd8);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin: 0;
+}
+#Solutions-Container08 .Container08_Wrap .Text_Wrap > h3:nth-child(2) {
+  font-size: 56px;
+  font-weight: 700;
+  margin: 18px 0;
+  line-height: 75.1px;
+}
+#Solutions-Container08 > div:last-child {
+  width: 80%;
+  margin: 0 auto;
+}
+#Solutions-Container08 > div:last-child > img,
+#Solutions-Container08 .Container08_Wrap > img {
+  width: auto;
+  object-fit: contain;
+}
+#Solutions-Container08 .Contents_Wrap {
+  background: #f1fbfd;
+}
+#Solutions-Container08 .Contents_Wrap div {
+  width: 80%;
+  margin: 0 auto;
+}
+#Solutions-Container08 > p {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: 500;
+  color: #a0a0a0;
+  margin-bottom: 96px;
+  margin-top: 20px;
+}

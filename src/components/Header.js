@@ -6,12 +6,14 @@ import '../assets/css/Header.css'
 
 const menuData = [
   {
-    title: 'IT솔루션',
+    title: '풀필먼트',
     submenu: ['솔루션 1', '솔루션 2', '솔루션 3'],
+    link: '/',
   },
   {
-    title: '풀필먼트',
+    title: 'IT솔루션',
     submenu: ['서비스 1', '서비스 2', '서비스 3'],
+    link: '/solution',
   },
   {
     title: '혜택안내',
@@ -20,6 +22,7 @@ const menuData = [
   {
     title: '회사소개',
     submenu: ['회사 소개 1', '회사 소개 2', '회사 소개 3'],
+    link: '/introduce',
   },
 ]
 

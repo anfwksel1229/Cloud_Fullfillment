@@ -1,0 +1,14 @@
+#Footer_02 {
+  width: 100%;
+  padding-bottom: 83px;
+  background: transparent;
+}
+#Footer_02 .Footer_Wrap {
+  width: 70%;
+  margin: 0 auto;
+}
+#Footer_02 .Footer_Wrap .Contents_Wrap p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}

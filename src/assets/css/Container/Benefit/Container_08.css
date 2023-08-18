@@ -1,0 +1,33 @@
+#Fulfilment-Container08 {
+  width: 100%;
+  margin: 110px 0;
+}
+#Fulfilment-Container08 .Container08_Wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+}
+#Fulfilment-Container08 .Container08_Wrap img {
+  width: auto;
+  object-fit: contain;
+}
+#Fulfilment-Container08 .Container08_Wrap .Text_Wrap {
+  margin-left: 16%;
+}
+#Fulfilment-Container08 .Container08_Wrap .Text_Wrap p:nth-child(1) {
+  background: linear-gradient(to bottom, #00b6ad, #4063fe);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-bottom: 48px;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 66px;
+}
+#Fulfilment-Container08 .Container08_Wrap .Text_Wrap p:nth-child(2) {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+}

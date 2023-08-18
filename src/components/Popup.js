@@ -9,7 +9,6 @@ function Popup() {
 
   const closePopup = () => {
     setIsPopupOpen(false)
-    console.log('이시발')
   }
 
   return (

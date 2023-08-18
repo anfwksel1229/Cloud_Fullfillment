@@ -1,0 +1,26 @@
+#Fulfilment-Container07 {
+  width: 100%;
+}
+#Fulfilment-Container07 .Container07_Wrap {
+  width: 70%;
+  margin: 0 auto;
+}
+#Fulfilment-Container07 .Container07_Wrap .Text_Wrap {
+  border: 2px solid #81b7ff;
+  background-color: #f8fcff;
+  border-radius: 20px;
+}
+#Fulfilment-Container07 .Container07_Wrap .Text_Wrap p {
+  color: #000;
+  margin: 0;
+  padding: 23px 0;
+}
+#Fulfilment-Container07 .Container07_Wrap .Text_Wrap p span:nth-child(1) {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 61px;
+}
+#Fulfilment-Container07 .Container07_Wrap .Text_Wrap p span:nth-child(3) {
+  font-size: 32px;
+  font-weight: 700;
+}

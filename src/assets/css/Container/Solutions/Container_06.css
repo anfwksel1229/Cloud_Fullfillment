@@ -1,0 +1,32 @@
+#Solutions-Container06 {
+  width: 100%;
+}
+#Solutions-Container06 .Container06_Wrap {
+  width: 80%;
+  margin: 0 auto;
+  padding: 191px 0 0px;
+}
+
+#Solutions-Container06 .Container06_Wrap .Text_Wrap > h3:nth-child(1) {
+  font-size: 52px;
+  font-weight: 700;
+  background: linear-gradient(to top, #00afc7, #57ddd8);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin: 0;
+}
+#Solutions-Container06 .Container06_Wrap .Text_Wrap > h3:nth-child(2) {
+  font-size: 56px;
+  font-weight: 700;
+  margin: 18px 0;
+}
+#Solutions-Container06 .Container06_Wrap .Text_Wrap > p {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 69px;
+}
+#Solutions-Container06 .Container06_Wrap img {
+  width: auto;
+  object-fit: contain;
+}

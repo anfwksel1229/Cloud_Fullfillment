@@ -10,7 +10,7 @@ import Container06 from './Main/ScrollContainer/Container06'
 import Container07 from './Main/ScrollContainer/Container07'
 import Container08 from './Main/ScrollContainer/Container08'
 import Container09 from './Main/ScrollContainer/Container09'
-import Footer from '../components/Footer'
+// import Footer from '../components/Footer'
 // import Footer from './Footer'
 
 // Import Swiper styles
@@ -156,9 +156,9 @@ function SlideContainer() {
         <SwiperSlide style={{ backgroundColor: '#080F2B' }}>
           <Container09 />
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <Footer />
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </>
   )

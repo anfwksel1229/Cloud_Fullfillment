@@ -1,0 +1,28 @@
+#Introduce-Container02 {
+  width: 100%;
+}
+#Introduce-Container02 .Introduce_Wrap02 {
+  width: 80%;
+  margin: 0 auto;
+}
+#Introduce-Container02 .Introduce_Wrap02 > img {
+  width: auto;
+  object-fit: contain;
+}
+#Introduce-Container02 .Introduce_Wrap02 .Text_Wrap {
+  margin-bottom: 126px;
+}
+#Introduce-Container02 .Introduce_Wrap02 .Text_Wrap > h3 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 56px;
+  margin: 127px 0 70px;
+}
+#Introduce-Container02 .Introduce_Wrap02 .Text_Wrap > p {
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 50px;
+}
+#Introduce-Container02 .Introduce_Wrap02 .Text_Wrap > p:last-child {
+  font-weight: 700;
+}

@@ -7,7 +7,9 @@ import Container03 from '../../components/Benefit/Container03'
 import Container04 from '../../components/Benefit/Container04'
 import Container05 from '../../components/Benefit/Container05'
 import Container06 from '../../components/Benefit/Container06'
-// import Footer from '../Footer'
+import Container07 from '../../components/Benefit/Container07'
+import Container08 from '../../components/Benefit/Container08'
+import Footer02 from '../Footer02'
 
 function Fulfilment() {
   return (
@@ -18,8 +20,10 @@ function Fulfilment() {
       <Container04 />
       <Container05 />
       <Container06 />
+      <Container07 />
+      <Container08 />
 
-      {/* <Footer /> */}
+      <Footer02 />
     </div>
   )
 }

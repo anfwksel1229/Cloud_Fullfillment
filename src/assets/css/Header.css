@@ -1,3 +1,15 @@
+/* 스크롤바를 숨기고 커스텀 스타일링 적용 */
+body {
+  overflow: auto; /* 스크롤 가능한 영역을 보여줌 */
+  scrollbar-width: thin; /* 스크롤바 너비 조정 (크롬, 파이어폭스) */
+  scrollbar-color: gray lightgray; /* 스크롤바 색상 (크롬, 파이어폭스) */
+}
+
+/* Webkit 브라우저(크롬, 사파리)에 대한 커스텀 스타일링 */
+body::-webkit-scrollbar {
+  width: 0px; /* 스크롤바 너비 */
+}
+
 #Header {
   display: flex;
   position: fixed;
@@ -23,11 +35,14 @@
 #Header .list_wrap ul .menu_item {
   font-size: 14px;
   padding: 40px 20px;
-  color: #fff;
+  color: #b2c0cb;
   cursor: pointer;
 }
-#Header .list_wrap ul li a {
+#Header .list_wrap ul .menu_item:hover {
   color: #fff;
+}
+#Header .list_wrap ul li a {
+  color: #b2c0cb;
 }
 
 #Header #Request {
@@ -42,16 +57,16 @@
 }
 
 #Header .list_wrap ul li a {
-  color: #fff;
+  color: #b2c0cb;
   text-decoration: none; /* 링크 텍스트 밑줄 제거 */
   transition: color 0.3s; /* 색상 변경 트랜지션 설정 */
 }
 
 #Header .list_wrap ul li a:hover {
-  color: #31d2b5; /* 마우스 호버 시 색상 변경 */
+  color: #fff; /* 마우스 호버 시 색상 변경 */
 }
 #Header .list_wrap ul li .active {
-  color: #31d2b5; /* 방문된 링크의 색상 변경 */
+  color: #fff; /* 방문된 링크의 색상 변경 */
 }
 
 /* 서브메뉴 */

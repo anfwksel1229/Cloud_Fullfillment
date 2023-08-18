@@ -1,0 +1,59 @@
+#Solutions-Container03 {
+  width: 100%;
+  background: #f1fbfd;
+}
+#Solutions-Container03 .Container03_Wrap {
+  width: 80%;
+  margin: 0 auto;
+  padding: 191px 0 170px;
+}
+#Solutions-Container03 .Container03_Wrap > h3 {
+  font-size: 56px;
+  font-weight: 700;
+}
+#Solutions-Container03 .Container03_Wrap .Cotants_Wrap {
+  width: fit-content;
+  margin: 0 auto;
+}
+#Solutions-Container03 .Container03_Wrap .Cotants_Wrap img {
+  width: 100%;
+  object-fit: contain;
+}
+#Solutions-Container03 .Container03_Wrap .Cotants_Wrap .Text_Wrap ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+#Solutions-Container03
+  .Container03_Wrap
+  .Cotants_Wrap
+  .Text_Wrap
+  ul
+  li:nth-child(1) {
+  margin-left: 10px;
+}
+#Solutions-Container03
+  .Container03_Wrap
+  .Cotants_Wrap
+  .Text_Wrap
+  ul
+  li:nth-child(2) {
+  margin-right: 35px;
+}
+#Solutions-Container03
+  .Container03_Wrap
+  .Cotants_Wrap
+  .Text_Wrap
+  ul
+  li:nth-child(3) {
+  margin-right: 27px;
+}
+#Solutions-Container03 .Container03_Wrap .Cotants_Wrap .Text_Wrap ul li p {
+  font-size: 23px;
+  font-weight: 800;
+}
+#Solutions-Container03 .Container03_Wrap .Cotants_Wrap .Text_Wrap ul li span {
+  font-size: 20px;
+  font-weight: 500;
+}
