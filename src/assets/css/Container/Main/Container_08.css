@@ -31,18 +31,60 @@
 #Container08 .Container08_wrap .Title_wrap {
   margin-left: 15%;
 }
+#Container08 > div > div > p.Sub_title.Container_08-02 > span {
+  color: #31d2b5;
+}
 #Container08 .Container08_wrap .Title_wrap .Main_title {
   color: #fff;
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 700;
+  font-family: 'Pretendard-Regular';
   text-align: end;
 }
 #Container08 .Container08_wrap .Title_wrap .Main_title span {
   color: #31d2b5;
 }
 #Container08 .Container08_wrap .Title_wrap .Sub_title {
-  font-weight: 400;
+  font-weight: 700;
+  font-family: 'Pretendard-Regular';
   font-size: 18px;
   color: #fff;
   text-align: end;
+}
+@media (max-width: 769px) {
+  #Container08 .Container08_wrap {
+    flex-wrap: wrap;
+    top: 0%;
+    transform: translate(-50%, 0%);
+    margin-left: 12px;
+    width: 100%;
+  }
+  #Container08 .Container08_wrap .Title_wrap {
+    margin-left: 0;
+  }
+  #Container08 > img {
+    width: 500px;
+    height: 656px;
+    position: absolute;
+    bottom: 0;
+    right: -50px;
+    overflow: hidden;
+  }
+  #Container08 .Container08_wrap img {
+    width: 200px;
+  }
+  #Container08 .Container08_wrap .Title_wrap .Main_title {
+    font-size: 26px;
+    text-align: end;
+  }
+  #Container08 .Container08_wrap .Title_wrap .Sub_title {
+    text-align: end;
+  }
+  #Container08 .Container08_wrap .Title_wrap .Sub_title span {
+    color: #31d2b5;
+  }
+  #Container08 .add_text {
+    position: unset;
+    transform: unset;
+  }
 }

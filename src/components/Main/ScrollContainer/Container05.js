@@ -1,18 +1,43 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../../../assets/css/Container/Main/Container_05.css'
 import Phone_items from '../../../assets/images/Main/Phone_items.png'
 
 function Container05() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth)
+    }
+
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
+
+  const isNarrowScreen = windowWidth <= 769
+
   return (
     <div id="Container05">
       <div className="Container05_wrap">
         <img src={Phone_items} alt="" />
         <div className="Title_wrap">
-          <p className="Main_title Container_05-01">
-            타사대비, 클라우드 풀필먼트 <br />
-            합포장센터를 통한 <br />
-            <span>37% 이상 검증된</span> 물류비 절감효과!
-          </p>
+          {isNarrowScreen ? (
+            <p className="Main_title Container_05-01">
+              타사대비,
+              <br /> 클라우드 풀필먼트 합포장센터를 통한 <br />
+              <span>37% 이상 검증된</span> 물류비 절감효과!
+            </p>
+          ) : (
+            <p className="Main_title Container_05-01">
+              타사대비, 클라우드 풀필먼트 <br />
+              합포장센터를 통한 <br />
+              <span>37% 이상 검증된</span> 물류비 절감효과!
+            </p>
+          )}
+
           <p className="Sub_title Container_05-02">
             모든 접점에서 발생한 고객 정보를 연결해 다양한
             <br />
@@ -20,10 +45,17 @@ function Container05() {
           </p>
         </div>
       </div>
-      <p className="add_text">
-        * 클라우드 풀필먼트 전용 쇼핑몰 운영 결과. 전체 주문의 70% 단건 주문인
-        조건 기반 결과.
-      </p>
+      {isNarrowScreen ? (
+        <p className="add_text">
+          * 클라우드 풀필먼트 전용 쇼핑몰 운영 결과.
+          <br /> 전체 주문의 70% 단건 주문인 조건 기반 결과.
+        </p>
+      ) : (
+        <p className="add_text">
+          * 클라우드 풀필먼트 전용 쇼핑몰 운영 결과. 전체 주문의 70% 단건 주문인
+          조건 기반 결과.
+        </p>
+      )}
     </div>
   )
 }

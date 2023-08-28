@@ -23,3 +23,22 @@
   color: #31d2b5;
   padding-left: 10px;
 }
+/* @media (max-width: 769px) {
+  img {
+    width: 100% !important;
+  }
+  #Header,
+  #PopupOverlay {
+    display: none;
+  }
+} */
+@media (max-width: 769px) {
+  #Introduce p {
+    font-size: 27px;
+    width: 100%;
+    line-height: 40px;
+  }
+  #Introduce p span:nth-child(3) {
+    color: #31d2b5;
+  }
+}

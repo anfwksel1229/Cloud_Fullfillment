@@ -62,12 +62,12 @@ function SlideContainer() {
     } else if (activeIndex === 5) {
       // Assuming Container06 is the second slide
       const subTitle = document.querySelector('.Container_06-01')
-      const mainTitle = document.querySelector('.Container_06-02')
+      // const mainTitle = document.querySelector('.Container_06-02')
       const cycle = document.querySelector('.Container_06-03')
-      gsap.set([subTitle, mainTitle, cycle], { y: 50, opacity: 0 })
+      gsap.set([subTitle, cycle], { y: 50, opacity: 0 })
       const tl = gsap.timeline({ defaults: { ease: 'power3.inOut' } })
       tl.to(subTitle, { y: 0, opacity: 1, duration: 1 })
-      tl.to(mainTitle, { y: 0, opacity: 1, duration: 1 }, '-=0.5')
+      // tl.to(mainTitle, { y: 0, opacity: 1, duration: 1 }, '-=0.5')
       tl.to(cycle, { y: 0, opacity: 1, duration: 1 })
     } else if (activeIndex === 6) {
       // Assuming Container07 is the second slide
@@ -79,7 +79,7 @@ function SlideContainer() {
       const tl = gsap.timeline({ defaults: { ease: 'power3.inOut' } })
       tl.to(subTitle, { y: 0, opacity: 1, duration: 1 })
       tl.to(mainTitle, { y: 0, opacity: 1, duration: 1.5 }, '-=0.5')
-      tl.to(cycle, { y: -50, duration: 1 }, '-=1')
+      tl.to(cycle, { y: -80, duration: 1 }, '-=1')
     } else if (activeIndex === 7) {
       // Assuming Container08 is the second slide
       const subTitle = document.querySelector('.Container_08-01')
@@ -90,28 +90,94 @@ function SlideContainer() {
       tl.to(mainTitle, { y: 0, opacity: 1, duration: 1.5 }, '-=0.5')
 
       const truckImage = document.querySelector('.truck-image')
-      if (window.innerWidth <= 991) {
-        gsap.set(truckImage, { x: '86%', y: '100%' }) // Set initial position for smaller screens
+      if (window.innerWidth <= 361) {
+        console.log('361')
+        gsap.set(truckImage, { x: '100%', y: '430%' })
+      } else if (window.innerWidth <= 376) {
+        console.log('376')
+        gsap.set(truckImage, { x: '100%', y: '375%' })
+      } else if (window.innerWidth <= 391) {
+        console.log('391')
+        gsap.set(truckImage, { x: '100%', y: '490%' })
+      } else if (window.innerWidth <= 413) {
+        console.log('413')
+        gsap.set(truckImage, { x: '100%', y: '545%' })
+      } else if (window.innerWidth <= 416) {
+        console.log('416')
+        gsap.set(truckImage, { x: '100%', y: '419%' }) // Set initial position for smaller screens
+      } else if (window.innerWidth <= 769) {
+        console.log('769')
+        gsap.set(truckImage, { x: '100%', y: '500%' }) // Set initial position for smaller screens
+      } else if (window.innerWidth <= 991) {
+        gsap.set(truckImage, { x: '86%', y: '100%' })
       } else {
-        gsap.set(truckImage, { x: '124%', y: '104%' }) // Set initial position for larger screens
+        gsap.set(truckImage, { x: '125%', y: '104%' })
       }
 
       const t2 = gsap.timeline({ defaults: { ease: 'power3.inOut' } }) // Repeat the animation indefinitely
 
-      t2.to(truckImage, {
-        x: '-139%',
-        y: '-94%',
-        duration: 3,
-      })
+      // 갤럭시 S8+
+      if (window.innerWidth <= 361) {
+        t2.to(truckImage, {
+          x: '-100%',
+          y: '280%',
+          duration: 3,
+        })
+        // 아이폰 6/7/8
+      } else if (window.innerWidth <= 376) {
+        t2.to(truckImage, {
+          x: '-100%',
+          y: '225%',
+          duration: 3,
+        })
+        // 아이폰 13
+      } else if (window.innerWidth <= 391) {
+        t2.to(truckImage, {
+          x: '-100%',
+          y: '349%',
+          duration: 3,
+        })
+        // 갤럭시 S20 울트
+      } else if (window.innerWidth <= 413) {
+        t2.to(truckImage, {
+          x: '-100%',
+          y: '394%',
+          duration: 3,
+        })
+      } else if (window.innerWidth <= 416) {
+        t2.to(truckImage, {
+          x: '-100%',
+          y: '267%',
+          duration: 3,
+        })
+      } else {
+        t2.to(truckImage, {
+          x: '-137%',
+          y: '-94%',
+          duration: 3,
+        })
+      }
     } else if (activeIndex === 8) {
       // Assuming Container09 is the second slide
       const subTitle = document.querySelector('.Container_09-01')
       const mainTitle = document.querySelector('.Container_09-02')
-      gsap.set(subTitle, { x: -200, opacity: 0 })
+
+      if (window.innerWidth <= 769) {
+        gsap.set(subTitle, { x: -200, y: 130, opacity: 0 })
+      } else {
+        gsap.set(subTitle, { x: -200, y: 0, opacity: 0 })
+      }
       gsap.set(mainTitle, { y: 50, opacity: 0 })
+
       const tl = gsap.timeline({ defaults: { ease: 'power3.inOut' } })
-      tl.to(mainTitle, { y: 0, opacity: 1, duration: 1 })
-      tl.to(subTitle, { x: 100, opacity: 1, duration: 1 })
+
+      if (window.innerWidth <= 769) {
+        tl.to(mainTitle, { y: 0, opacity: 1, duration: 1 })
+        tl.to(subTitle, { x: 100, y: 135, opacity: 1, duration: 1 })
+      } else {
+        tl.to(mainTitle, { y: 0, opacity: 1, duration: 1 })
+        tl.to(subTitle, { x: 100, opacity: 1, duration: 1 })
+      }
     }
   }
   return (

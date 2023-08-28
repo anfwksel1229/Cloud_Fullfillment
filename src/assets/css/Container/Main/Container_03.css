@@ -6,6 +6,7 @@
   font-size: 40px;
   font-weight: 700;
   color: #fff;
+  font-family: 'Pretendard-Regular';
 }
 #Container03 .icon_container ul {
   display: flex;
@@ -23,7 +24,38 @@
   font-size: 30px;
   font-weight: 700;
   color: #fff;
+  font-family: 'Pretendard-Regular';
 }
 #Container03 .icon_container ul li div p span {
   color: #31d2b5;
+}
+@media (max-width: 769px) {
+  #Container03 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #Container03 .icon_container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #Container03 .icon_container ul {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  #Container03 .icon_container ul li div img {
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+  }
+  #Container03 .icon_container ul li:nth-child(1),
+  #Container03 .icon_container ul li:nth-child(2),
+  #Container03 .icon_container ul li:nth-child(3) {
+    margin: 0;
+  }
+  #Container03 .Main_title {
+    font-size: 29px;
+  }
+  #Container03 .icon_container ul li div p {
+    font-size: 20px;
+  }
 }

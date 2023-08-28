@@ -17,14 +17,16 @@
 #Container05 .Container05_wrap .Title_wrap .Main_title {
   color: #fff;
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 700;
   text-align: end;
+  font-family: 'Pretendard-Regular';
 }
 #Container05 .Container05_wrap .Title_wrap .Main_title span {
   color: #31d2b5;
 }
 #Container05 .Container05_wrap .Title_wrap .Sub_title {
-  font-weight: 400;
+  font-weight: 700;
+  font-family: 'Pretendard-Regular';
   font-size: 18px;
   color: #fff;
   text-align: end;
@@ -32,9 +34,41 @@
 #Container05 .add_text {
   color: #fff;
   font-size: 14px;
+  font-family: 'Pretendard-Regular';
   font-weight: 300;
   margin-top: 50px;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 50%);
+}
+@media (max-width: 769px) {
+  #Container05 {
+    width: 100%;
+  }
+  #Container05 .Container05_wrap {
+    flex-wrap: wrap-reverse;
+  }
+  #Container05 .Container05_wrap .Title_wrap {
+    margin-left: 0;
+  }
+  #Container05 .Container05_wrap img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #Container05 .Container05_wrap .Title_wrap .Main_title {
+    font-size: 22px;
+    text-align: center;
+  }
+  #Container05 .Container05_wrap .Title_wrap .Sub_title {
+    text-align: center;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 60px;
+  }
+  #Container05 .add_text {
+    position: unset;
+    transform: unset;
+    font-size: 12px;
+    line-height: 24px;
+  }
 }

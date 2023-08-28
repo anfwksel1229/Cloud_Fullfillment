@@ -34,3 +34,22 @@
   width: auto;
   object-fit: contain;
 }
+@media (max-width: 769px) {
+  #Solutions-Container04 .Container04_Wrap {
+    width: 90%;
+  }
+  #Solutions-Container04 .Container04_Wrap .Text_Wrap > h3:nth-child(2) {
+    font-size: 1.3em;
+  }
+  #Solutions-Container04 .Container04_Wrap .Text_Wrap > p {
+    font-size: 14px;
+  }
+  #Solutions-Container04 .Container04_Wrap img {
+    width: 100%;
+  }
+  #Solutions-Container04 .Container04_Wrap > p {
+    margin-right: 0;
+    text-align: center;
+    font-size: 10px;
+  }
+}

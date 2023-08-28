@@ -31,3 +31,31 @@
   font-weight: 500;
   line-height: 48px;
 }
+@media (max-width: 769px) {
+  #Fulfilment-Container08 {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  #Fulfilment-Container08 .Container08_Wrap {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #Fulfilment-Container08 .Container08_Wrap img {
+    width: 100%;
+  }
+  #Fulfilment-Container08 .Container08_Wrap .Text_Wrap {
+    margin-left: 0;
+    width: 100%;
+  }
+  #Fulfilment-Container08 .Container08_Wrap .Text_Wrap p:nth-child(1) {
+    font-size: 27px;
+    line-height: 40px;
+  }
+  #Fulfilment-Container08 .Container08_Wrap .Text_Wrap p:nth-child(2) {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+  }
+}

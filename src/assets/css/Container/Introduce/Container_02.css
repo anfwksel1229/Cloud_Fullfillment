@@ -26,3 +26,54 @@
 #Introduce-Container02 .Introduce_Wrap02 .Text_Wrap > p:last-child {
   font-weight: 700;
 }
+@media (max-width: 769px) {
+  #Introduce-Container02 {
+    width: 100%;
+    margin: 0 auto;
+    background: url('../../../images/Introduce/Container03_Bg.png');
+    background-position: center;
+    background-size: cover;
+  }
+  #Introduce-Container02 .Introduce_Wrap02 {
+    width: 90%;
+  }
+  #Introduce-Container02 .Introduce_Wrap02 > img {
+    width: 85%;
+    margin: 80px 0 40px;
+  }
+  #Introduce-Container02 .Introduce_Wrap02 .Text_Wrap {
+    margin-bottom: 0;
+    padding-bottom: 90px;
+    width: 100%;
+  }
+  #Introduce-Container02 .Introduce_Wrap02 .Text_Wrap > h3 {
+    margin: 0;
+  }
+  #Introduce-Container02 .Introduce_Wrap02 .Text_Wrap > h3 p:nth-child(1) {
+    font-size: 27px;
+    line-height: 32px;
+  }
+  #Introduce-Container02 .Introduce_Wrap02 .Text_Wrap > h3 p:nth-child(2) {
+    font-size: 16px;
+    color: #31d2b5;
+    line-height: 20px;
+    margin-bottom: 40px;
+  }
+  #Introduce-Container02 .Introduce_Wrap02 .Text_Wrap > p {
+    /* font-size: 0.6em; */
+    font-size: 11px;
+    line-height: 20px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    width: 100%;
+    margin: 0 auto 24px;
+    margin-right: 0;
+  }
+  #Introduce-Container02 .Introduce_Wrap02 .Text_Wrap > p:last-child {
+    display: block;
+    width: 290px;
+    margin: 0 auto;
+  }
+}

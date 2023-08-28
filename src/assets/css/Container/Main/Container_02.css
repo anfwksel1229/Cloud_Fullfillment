@@ -4,6 +4,7 @@
 }
 #Container02 .Main_title {
   font-size: 44px;
+  font-family: 'Pretendard-Regular';
   font-weight: 700;
 }
 #Container02 .Main_title span.gradient {
@@ -17,8 +18,9 @@
 }
 #Container02 .Sub_title {
   color: #71b9b5e5;
+  font-family: 'Pretendard-Regular';
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
 }
 #Container02 .Soultion {
   display: flex;
@@ -33,6 +35,7 @@
   font-size: 32.94px;
   font-weight: 700;
   margin-right: 37px;
+  font-family: 'Pretendard-Regular';
 }
 #Container02 .Soultion > p:nth-child(3) {
   background: linear-gradient(to right, #31d2b5, #ffffff);
@@ -42,6 +45,7 @@
   font-size: 32.94px;
   font-weight: 700;
   margin-left: 33px;
+  font-family: 'Pretendard-Regular';
 }
 #Container02 .Soultion .Cycle {
   background-image: url('../../../images/Main/Cycle.png');
@@ -60,4 +64,28 @@
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
+  font-family: 'Pretendard-Regular';
+}
+@media (max-width: 769px) {
+  #Container02 .Main_title {
+    font-size: 29px;
+  }
+  #Container02 .Sub_title {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  #Container02 .Soultion {
+    flex-wrap: wrap;
+  }
+  #Container02 .Soultion > p:nth-child(1) {
+    margin: 30px auto 20px;
+    font-size: 26px;
+  }
+  #Container02 .Soultion > p:nth-child(3) {
+    margin: 20px auto 30px;
+    font-size: 26px;
+  }
+  #Container02 .Soultion .Cycle p {
+    font-size: 32.94px;
+  }
 }

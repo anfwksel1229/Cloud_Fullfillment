@@ -64,6 +64,10 @@
   margin-right: auto;
   cursor: pointer;
 }
+#PopupContent .Contents_Wrap .Request a {
+  color: #fff;
+  text-decoration: none;
+}
 #PopupContent .Contents_Wrap img {
   position: absolute;
   top: 0;

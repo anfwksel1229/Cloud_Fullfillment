@@ -39,3 +39,29 @@
   margin-bottom: 7px;
   line-height: 32px;
 }
+@media (max-width: 769px) {
+  #Fulfilment-Container03 {
+    background: unset;
+    height: 450px;
+  }
+  #Fulfilment-Container03 .Container03_Wrap {
+    flex-wrap: wrap;
+    padding-right: 0;
+  }
+  #Fulfilment-Container03 .Container03_Wrap img {
+    width: 40%;
+  }
+  #Fulfilment-Container03 .Container03_Wrap .Text_Wrap {
+    margin-left: 0;
+    text-align: center;
+  }
+  #Fulfilment-Container03 .Container03_Wrap .Text_Wrap h3 {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+  #Fulfilment-Container03 .Container03_Wrap .Text_Wrap p {
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 14px;
+  }
+}

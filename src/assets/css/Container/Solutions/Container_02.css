@@ -31,3 +31,31 @@
 #Solutions-Container02 .Container02_Wrap .Text_Wrap span strong {
   font-weight: 700;
 }
+@media (max-width: 769px) {
+  #Solutions-Container02 .Container02_Wrap {
+    flex-wrap: wrap-reverse;
+    padding: 40px 0;
+    width: 90%;
+  }
+  #Solutions-Container02 .Container02_Wrap .Text_Wrap {
+    width: 100%;
+  }
+  #Solutions-Container02 .Container02_Wrap .Text_Wrap h3 {
+    font-size: 30px;
+  }
+  #Solutions-Container02 .Container02_Wrap .Text_Wrap h3 > span {
+    font-size: 30px;
+    color: #00b58a;
+  }
+  #Solutions-Container02 .Container02_Wrap img {
+    width: 100%;
+  }
+  #Solutions-Container02 .Container02_Wrap .Text_Wrap p {
+    font-size: 22px;
+    line-height: 38px;
+  }
+  #Solutions-Container02 .Container02_Wrap .Text_Wrap span {
+    font-size: 10px;
+    color: #4d4d4d;
+  }
+}

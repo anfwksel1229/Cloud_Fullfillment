@@ -16,15 +16,42 @@
 #Container06 .Container06_wrap .Title_wrap .Main_title {
   color: #fff;
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 700;
+  font-family: 'Pretendard-Regular';
   text-align: start;
 }
 #Container06 .Container06_wrap .Title_wrap .Main_title span {
   color: #31d2b5;
 }
 #Container06 .Container06_wrap .Title_wrap .Sub_title {
-  font-weight: 400;
+  font-weight: 700;
   font-size: 18px;
   color: #fff;
   text-align: start;
+}
+@media (max-width: 769px) {
+  #Container06 {
+    width: 100%;
+  }
+  #Container06 .Container06_wrap {
+    flex-wrap: wrap;
+  }
+  #Container06 .Container06_wrap img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #Container06 .Container06_wrap .Title_wrap {
+    margin-right: 0;
+  }
+  #Container06 .Container06_wrap .Title_wrap .Main_title {
+    font-size: 24px;
+    text-align: center;
+  }
+  #Container06 .Container06_wrap .Title_wrap .Sub_title {
+    text-align: center;
+  }
+  #Container06 .add_text {
+    position: unset;
+    transform: unset;
+  }
 }

@@ -3,6 +3,7 @@ import '../assets/css/Popup.css'
 import Container from '../assets/images/Popup/Container.png'
 import Popup_Logo from '../assets/images/Popup/Popup_Logo.png'
 import Close_Btn from '../assets/images/Popup/Close_Btn.png'
+import { Link } from 'react-router-dom'
 
 function Popup() {
   const [isPopupOpen, setIsPopupOpen] = useState(true)
@@ -28,7 +29,11 @@ function Popup() {
               합리적인 파트너가 필요하신가요?
             </p>
           </div>
-          <div className="Request">상담문의 바로가기</div>
+          <div className="Request">
+            <Link to="https://forms.gle/1AR8QiJ2CEs88ZE16">
+              상담신청 바로가기
+            </Link>
+          </div>
         </div>
       </div>
     </div>

@@ -13,14 +13,16 @@
 #Container07 .Container07_wrap .Title_wrap .Main_title {
   color: #fff;
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 700;
+  font-family: 'Pretendard-Regular';
   text-align: start;
 }
 #Container07 .Container07_wrap .Title_wrap .Main_title span {
   color: #31d2b5;
 }
 #Container07 .Container07_wrap .Title_wrap .Sub_title {
-  font-weight: 400;
+  font-weight: 700;
+  font-family: 'Pretendard-Regular';
   font-size: 18px;
   color: #fff;
   text-align: start;
@@ -41,4 +43,35 @@
 #Container07 .Container07_wrap .CheckBox img:nth-child(2) {
   z-index: 9;
   position: sticky;
+}
+@media (max-width: 769px) {
+  #Container07 {
+    width: 100%;
+  }
+  #Container07 .Container07_wrap {
+    flex-wrap: wrap;
+  }
+  #Container07 .Container07_wrap .Title_wrap {
+    margin-right: 0;
+  }
+  #Container07 .Container07_wrap .CheckBox img {
+    width: 180px;
+  }
+  #Container07 .Container07_wrap .CheckBox img:nth-child(1) {
+    width: auto;
+    height: 100px;
+  }
+  #Container07 .Container07_wrap .Title_wrap .Main_title {
+    font-size: 29px;
+    text-align: center;
+  }
+  #Container07 .Container07_wrap .Title_wrap .Sub_title {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 70px;
+  }
+  #Container07 .add_text {
+    position: unset;
+    transform: unset;
+  }
 }

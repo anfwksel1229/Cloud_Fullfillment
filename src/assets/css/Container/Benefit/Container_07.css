@@ -24,3 +24,17 @@
   font-size: 32px;
   font-weight: 700;
 }
+@media (max-width: 769px) {
+  #Fulfilment-Container07 .Container07_Wrap {
+    width: 90%;
+  }
+  #Fulfilment-Container07 .Container07_Wrap .Text_Wrap p {
+    padding: 12px 0 28px;
+  }
+  #Fulfilment-Container07 .Container07_Wrap .Text_Wrap p span:nth-child(1) {
+    font-size: 18px;
+  }
+  #Fulfilment-Container07 .Container07_Wrap .Text_Wrap p span:nth-child(3) {
+    font-size: 23px;
+  }
+}

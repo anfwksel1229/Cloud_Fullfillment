@@ -40,3 +40,28 @@
   margin-bottom: 7px;
   line-height: 32px;
 }
+@media (max-width: 769px) {
+  #Fulfilment-Container06 {
+    background: unset;
+  }
+  #Fulfilment-Container06 .Container06_Wrap {
+    flex-wrap: wrap;
+    padding-left: 0px;
+  }
+  #Fulfilment-Container06 .Container06_Wrap img {
+    width: 40%;
+  }
+  #Fulfilment-Container06 .Container06_Wrap .Text_Wrap {
+    margin-left: 0;
+    text-align: center;
+  }
+  #Fulfilment-Container06 .Container06_Wrap .Text_Wrap h3 {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+  #Fulfilment-Container06 .Container06_Wrap .Text_Wrap p {
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 14px;
+  }
+}

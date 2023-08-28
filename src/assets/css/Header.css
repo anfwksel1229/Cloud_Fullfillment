@@ -34,6 +34,8 @@ body::-webkit-scrollbar {
 }
 #Header .list_wrap ul .menu_item {
   font-size: 14px;
+  font-family: 'Pretendard-Regular';
+  font-weight: 700;
   padding: 40px 20px;
   color: #b2c0cb;
   cursor: pointer;
@@ -54,8 +56,12 @@ body::-webkit-scrollbar {
   padding: 10px 15px 9px 15px;
   border-radius: 20px;
   cursor: pointer;
+  font-family: 'Pretendard-Regular';
 }
-
+#Header #Request a {
+  list-style: none;
+  color: #fff;
+}
 #Header .list_wrap ul li a {
   color: #b2c0cb;
   text-decoration: none; /* 링크 텍스트 밑줄 제거 */
@@ -65,12 +71,13 @@ body::-webkit-scrollbar {
 #Header .list_wrap ul li a:hover {
   color: #fff; /* 마우스 호버 시 색상 변경 */
 }
-#Header .list_wrap ul li .active {
+#Header .list_wrap ul li.active a {
   color: #fff; /* 방문된 링크의 색상 변경 */
 }
 
 /* 서브메뉴 */
 #Header .submenu {
+  display: none;
   visibility: hidden;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.8);
@@ -84,26 +91,141 @@ body::-webkit-scrollbar {
   top: 100px; /* 메뉴 아이템 아래로 위치 */
 }
 
-#Header .menu_item:hover .submenu {
+#Header .menu_item {
+  position: relative;
+}
+#Header .submenu {
+  visibility: hidden;
+  /* display: block; */
+  position: absolute;
+  border-radius: 8px;
+  padding: 10px;
+  width: auto;
+  opacity: 0;
+  transition: opacity 0.2s ease-out, visibility 0s 0.2s;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+  text-align: center; /* 중앙 정렬을 위해 추가 */
+}
+#Header .menu_item.active .submenu {
   visibility: visible;
   opacity: 1;
   transition: opacity 0.2s ease-out, visibility 0s;
+  width: 500px;
 }
-
-#Header .menu_item {
-  position: relative;
+#Header > div > ul > li.menu_item:nth-child(3) > .submenu {
+  width: 800px;
 }
 
 #Header .submenu > ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 348px;
-  justify-content: space-around;
+  width: 100%;
+  justify-content: center;
 }
 
 #Header .submenu ul li {
   color: #fff;
   margin: 5px 0;
   cursor: pointer;
+  width: fit-content;
+}
+/* 추가된 부분 */
+#Header .submenu::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#Header .submenu ul li::after {
+  content: '|';
+  padding: 0 10px;
+}
+#Header .submenu ul li:last-child::after {
+  content: '';
+}
+@media (max-width: 769px) {
+  #Header {
+    display: flex;
+    height: 100px;
+    position: fixed;
+    background: unset;
+  }
+  #Header > a > img {
+    width: 80%;
+  }
+  #Header #Request {
+    margin: 0 20px;
+  }
+  #Header .submenu {
+    display: block;
+    opacity: unset;
+    visibility: unset;
+    right: 0;
+    position: absolute;
+    top: -15px;
+    background: none;
+    width: fit-content;
+    transform: unset;
+    width: 100%;
+    text-align: start;
+  }
+  #Header .submenu > ul {
+    display: block;
+  }
+  #Header .submenu ul li::after {
+    content: '';
+  }
+  #Header .hamburger {
+    background: none;
+    /* position: absolute; */
+    /* top: 50%;
+    left: 10px;
+    transform: translateY(-50%); */
+    line-height: 1;
+    padding: 5px;
+    color: #fff;
+    border: 0;
+    font-size: 1.4em;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    z-index: 100;
+  }
+
+  #Header #menu {
+    display: block;
+    position: fixed;
+    top: 10%;
+    left: -100%; /* 초기에는 왼쪽으로 숨김 */
+    width: 100%; /* 메뉴의 너비 */
+    /* max-width: 300px; */
+    height: fit-content;
+    background-color: rgba(26, 36, 40, 0.7);
+    text-align: start;
+    list-style-type: none;
+    padding: 50px;
+    -webkit-font-smoothing: antialiased;
+    transition: left 0.3s ease-in-out; /* 슬라이드 애니메이션 효과 */
+    z-index: 99;
+  }
+
+  #Header #menu.menu-open {
+    left: 0; /* 왼쪽으로 이동하여 메뉴 표시 */
+    text-align: start;
+  }
+
+  #Header #menu li {
+    padding: 15px 0;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    width: 100%;
+  }
 }

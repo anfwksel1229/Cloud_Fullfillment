@@ -17,6 +17,8 @@
 }
 #Footer .Footer_Wrap > p {
   font-size: 14px;
+  font-family: 'Pretendard-Regular';
+  font-weight: 300;
 }
 #Footer .Footer_Wrap .Contents_Wrap img {
   width: 10%;
@@ -42,9 +44,47 @@
   line-height: 2;
   font-size: 14px;
   font-weight: 300;
+  font-family: 'Pretendard-Regular';
 }
 #Footer .Footer_Wrap .Contents_Wrap .List_Wrap ul p {
   font-size: 16px;
+  font-family: 'Pretendard-Regular';
   font-weight: 600;
   margin-bottom: 20px;
+}
+
+@media (max-width: 769px) {
+  #Footer {
+    height: 150px;
+    /* display: none; */
+  }
+  #Footer .Footer_Wrap {
+    width: 95%;
+    margin: 0 auto;
+    text-align: start;
+  }
+  #Footer .Footer_Wrap .title {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  #Footer .Footer_Wrap ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 0;
+    width: 100%;
+  }
+  #Footer .Footer_Wrap ul li {
+    font-size: 10px;
+    width: fit-content;
+  }
+  #Footer .Footer_Wrap ul li::after {
+    content: '|';
+    padding: 0 5px;
+  }
+  #Footer .Footer_Wrap ul li:last-child::after {
+    content: '';
+  }
+  #Footer .Footer_Wrap .Copyright {
+  }
 }

@@ -29,6 +29,7 @@
 
 #Container09 .Container09_wrap .Title_wrap .Main_title {
   color: #fff;
+  font-family: 'Pretendard-Regular';
   font-size: 40px;
   font-weight: 700;
 }
@@ -39,6 +40,15 @@
   font-weight: 700;
   font-size: 28px;
   color: #fff;
+  font-family: 'Pretendard-Regular';
+}
+@media (max-width: 769px) {
+  #Container09 .Container09_wrap .Title_wrap .Sub_title {
+    font-size: 20px;
+  }
+  #Container09 .Container09_wrap .Title_wrap .Main_title {
+    font-size: 32px;
+  }
 }
 /* 
 #Last_Wrapper {

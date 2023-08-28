@@ -30,3 +30,18 @@
   width: auto;
   object-fit: contain;
 }
+@media (max-width: 769px) {
+  #Solutions-Container05 .Container05_Wrap {
+    width: 90%;
+    padding: 100px 0 0;
+  }
+  #Solutions-Container05 .Container05_Wrap .Text_Wrap > h3:nth-child(2) {
+    font-size: 1.3em;
+  }
+  #Solutions-Container05 .Container05_Wrap .Text_Wrap > p {
+    font-size: 14px;
+  }
+  #Solutions-Container05 .Container05_Wrap img {
+    width: 100%;
+  }
+}

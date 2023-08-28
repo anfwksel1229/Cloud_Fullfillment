@@ -57,3 +57,11 @@
   font-size: 20px;
   font-weight: 500;
 }
+@media (max-width: 769px) {
+  #Solutions-Container03 .Container03_Wrap > h3 {
+    font-size: 30px;
+  }
+  #Solutions-Container03 .Container03_Wrap {
+    padding: 60px 0 80px;
+  }
+}

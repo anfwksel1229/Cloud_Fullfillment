@@ -16,15 +16,44 @@
 #Container04 .Container04_wrap .Title_wrap .Main_title {
   color: #fff;
   font-size: 40px;
-  font-weight: 400;
+  /* font-weight: 400; */
+  font-weight: 700;
   text-align: start;
+  font-family: 'Pretendard-Regular';
 }
 #Container04 .Container04_wrap .Title_wrap .Main_title span {
   color: #31d2b5;
 }
 #Container04 .Container04_wrap .Title_wrap .Sub_title {
-  font-weight: 400;
+  /* font-weight: 400; */
+  font-weight: 700;
   font-size: 18px;
   color: #fff;
   text-align: start;
+  font-family: 'Pretendard-Regular';
+}
+@media (max-width: 769px) {
+  #Container04 {
+    width: 100%;
+  }
+  #Container04 .Container04_wrap {
+    flex-wrap: wrap;
+  }
+  #Container04 .Container04_wrap .Title_wrap {
+    margin-right: 0;
+  }
+  #Container04 .Container04_wrap .Title_wrap .Main_title {
+    font-size: 27px;
+    text-align: center;
+  }
+  #Container04 .Container04_wrap .Title_wrap .Sub_title {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 80px;
+  }
+  #Container04 > div > img {
+    width: auto;
+    margin: 0 auto;
+    /* margin-left: 40px; */
+  }
 }
