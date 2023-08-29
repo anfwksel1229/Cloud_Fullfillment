@@ -45,11 +45,12 @@
   #Container04 .Container04_wrap .Title_wrap .Main_title {
     font-size: 27px;
     text-align: center;
+    margin-top: 70px;
   }
   #Container04 .Container04_wrap .Title_wrap .Sub_title {
     text-align: center;
     font-size: 16px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
   #Container04 > div > img {
     width: auto;

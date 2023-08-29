@@ -23,8 +23,15 @@ import { Mousewheel } from 'swiper/modules'
 
 function SlideContainer() {
   const handleSlideChange = (swiper) => {
+    const MainHeader = document.querySelector('#Header')
     const activeIndex = swiper.activeIndex // Get the active index
 
+    if (activeIndex !== 0) {
+      MainHeader.style.background = '#000'
+    } else {
+      MainHeader.style.background = 'unset'
+    }
+    // Gsap
     if (activeIndex === 1) {
       // Assuming Container02 is the second slide
       const subTitle = document.querySelector('.Container_02-01')
@@ -90,7 +97,12 @@ function SlideContainer() {
       tl.to(mainTitle, { y: 0, opacity: 1, duration: 1.5 }, '-=0.5')
 
       const truckImage = document.querySelector('.truck-image')
-      if (window.innerWidth <= 361) {
+
+      if (window.innerWidth <= 361 && window.innerHeight <= 651) {
+        gsap.set(truckImage, { x: '100%', y: '359%' })
+      } else if (window.innerWidth <= 361 && window.innerHeight <= 781) {
+        gsap.set(truckImage, { x: '100%', y: '459%' })
+      } else if (window.innerWidth <= 361) {
         console.log('361')
         gsap.set(truckImage, { x: '100%', y: '430%' })
       } else if (window.innerWidth <= 376) {
@@ -99,6 +111,9 @@ function SlideContainer() {
       } else if (window.innerWidth <= 391) {
         console.log('391')
         gsap.set(truckImage, { x: '100%', y: '490%' })
+      } else if (window.innerWidth <= 394 && window.innerHeight <= 853) {
+        console.log('391, 852')
+        gsap.set(truckImage, { x: '100%', y: '500%' })
       } else if (window.innerWidth <= 413) {
         console.log('413')
         gsap.set(truckImage, { x: '100%', y: '545%' })
@@ -116,8 +131,24 @@ function SlideContainer() {
 
       const t2 = gsap.timeline({ defaults: { ease: 'power3.inOut' } }) // Repeat the animation indefinitely
 
+      // 갤럭시 노트 3
+      if (window.innerWidth <= 361 && window.innerHeight <= 651) {
+        t2.to(truckImage, {
+          x: '-100%',
+          y: '209%',
+          duration: 3,
+        })
+      }
+      // 갤럭시 23
+      else if (window.innerWidth <= 361 && window.innerHeight <= 781) {
+        t2.to(truckImage, {
+          x: '-100%',
+          y: '309%',
+          duration: 3,
+        })
+      }
       // 갤럭시 S8+
-      if (window.innerWidth <= 361) {
+      else if (window.innerWidth <= 361) {
         t2.to(truckImage, {
           x: '-100%',
           y: '280%',
@@ -138,6 +169,13 @@ function SlideContainer() {
           duration: 3,
         })
         // 갤럭시 S20 울트
+      } else if (window.innerWidth <= 394 && window.innerHeight <= 853) {
+        t2.to(truckImage, {
+          x: '-100%',
+          y: '353%',
+          duration: 3,
+        })
+        // 아이폰 14 프로
       } else if (window.innerWidth <= 413) {
         t2.to(truckImage, {
           x: '-100%',

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import '../../../assets/css/Container/Main/Container_06.css'
 import Cloud_img from '../../../assets/images/Main/Cloud_img.png'
+import MobCloud_img from '../../../assets/images/Main/MobCloud_img.png'
 
 function Container06() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
@@ -46,7 +47,11 @@ function Container06() {
             제공하여 고객을 다각도로 이해할 수 있습니다.
           </p> */}
         </div>
-        <img className="Container_06-03" src={Cloud_img} alt="" />
+        {isNarrowScreen ? (
+          <img className="Container_06-03" src={MobCloud_img} alt="" />
+        ) : (
+          <img className="Container_06-03" src={Cloud_img} alt="" />
+        )}
       </div>
     </div>
   )

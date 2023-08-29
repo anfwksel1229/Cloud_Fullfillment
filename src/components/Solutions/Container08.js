@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import '../../assets/css/Container/Solutions/Container_08.css'
 import Contenst_05_01 from '../../assets/images/Solutions/Contenst_05_01.png'
+import MobContenst_05_01 from '../../assets/images/Solutions/MobContenst_05_01.png'
 import Contenst_05_02 from '../../assets/images/Solutions/Contenst_05_02.png'
 
 function Container08() {
@@ -42,9 +43,15 @@ function Container08() {
         </div>
       </div>
       <div className="Contents_Wrap">
-        <div>
-          <img src={Contenst_05_01} alt="" />
-        </div>
+        {isNarrowScreen ? (
+          <div>
+            <img src={MobContenst_05_01} alt="" />
+          </div>
+        ) : (
+          <div>
+            <img src={Contenst_05_01} alt="" />
+          </div>
+        )}
       </div>
 
       {isNarrowScreen ? (

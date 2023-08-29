@@ -1,9 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 // import gsap from 'gsap'
 import '../../../assets/css/Container/Main/Container_02.css'
 // import Cycle from '../../assets/images/Cycle.png'
 
 function Container02() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth)
+    }
+
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
+
+  const isNarrowScreen = windowWidth <= 769
+
   return (
     <div id="Container02">
       <p className="Sub_title Container_02-01">
@@ -17,9 +33,13 @@ function Container02() {
       </p>
       <div className="Soultion Container_02-03">
         <p>매출상승 전략</p>
-        <div className="Cycle">
-          <p>IT솔루션</p>
-        </div>
+        {isNarrowScreen ? (
+          <div className="Cycle"></div>
+        ) : (
+          <div className="Cycle">
+            <p>IT솔루션</p>
+          </div>
+        )}
         <p>물류비 절감</p>
       </div>
     </div>

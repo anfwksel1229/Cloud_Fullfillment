@@ -63,6 +63,24 @@ function Header() {
     }
   }, [])
 
+  // 링크마다 스크롤
+  window.addEventListener('scroll', function () {
+    const link = window.location.pathname // 현재 페이지 경로를 가져옴
+
+    const Header = document.querySelector('#Header')
+
+    // console.log('스크롤값이용 ::', window.scrollY)
+    const scrollPosition = window.scrollY
+    const threshold = 450 // 스크롤 위치가 이 값 이상일 때 스타일을 변경
+    if (link === '/solution' || link === '/benefit' || link === '/introduce') {
+      // '/solution' 링크에 해당하는 경우
+      if (scrollPosition >= threshold) {
+        Header.style.background = '#000'
+      } else {
+        Header.style.background = 'unset' // 기본 스타일로 변경
+      }
+    }
+  })
   const isNarrowScreen = windowWidth <= 769
 
   const handleMenuClick = (index, link, event) => {
@@ -79,6 +97,10 @@ function Header() {
 
     setIsMenuOpen(false) // 메뉴 항목을 클릭할 때 메뉴 닫기
   }
+  const handleLogoClick = () => {
+    setActiveSubMenu(null) // 로고 클릭 시 activeSubMenu 초기화
+    setIsMenuOpen(false) // 로고 클릭 시 메뉴 닫기
+  }
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -88,7 +110,7 @@ function Header() {
     <div id="Header">
       <Link to="/">
         {isNarrowScreen ? (
-          <img src={MobLogo} alt="" />
+          <img src={MobLogo} alt="" onClick={handleLogoClick} />
         ) : (
           <img src={Logo} alt="" />
         )}
@@ -110,6 +132,9 @@ function Header() {
             id="menu"
             className={`mobile-menu ${isMenuOpen ? 'menu-open' : ''}`}
           >
+            <p onClick={toggleMenu} className="Close_Btn">
+              &#9932;
+            </p>
             {menuData.map((item, index) => (
               <li
                 className={`hamburger_menu_item ${

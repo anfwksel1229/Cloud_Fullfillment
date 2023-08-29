@@ -35,7 +35,7 @@
     margin: 0 auto;
   }
   #Container03 .icon_container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
   }
   #Container03 .icon_container ul {
@@ -43,7 +43,8 @@
     padding: 0;
   }
   #Container03 .icon_container ul li div img {
-    width: 150px;
+    /* width: 150px; */
+    width: 45%;
     height: auto;
     margin: 0 auto;
   }
@@ -54,6 +55,7 @@
   }
   #Container03 .Main_title {
     font-size: 29px;
+    margin-top: 70px;
   }
   #Container03 .icon_container ul li div p {
     font-size: 20px;
