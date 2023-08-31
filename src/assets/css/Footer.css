@@ -17,7 +17,7 @@
 }
 #Footer .Footer_Wrap > p {
   font-size: 14px;
-  font-family: 'Pretendard-Regular';
+
   font-weight: 300;
 }
 #Footer .Footer_Wrap .Contents_Wrap img {
@@ -44,11 +44,10 @@
   line-height: 2;
   font-size: 14px;
   font-weight: 300;
-  font-family: 'Pretendard-Regular';
 }
 #Footer .Footer_Wrap .Contents_Wrap .List_Wrap ul p {
   font-size: 16px;
-  font-family: 'Pretendard-Regular';
+
   font-weight: 600;
   margin-bottom: 20px;
 }

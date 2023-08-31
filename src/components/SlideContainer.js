@@ -26,10 +26,11 @@ function SlideContainer() {
     const MainHeader = document.querySelector('#Header')
     const activeIndex = swiper.activeIndex // Get the active index
 
+    MainHeader.style.transition = 'top 0.5s ease'
     if (activeIndex !== 0) {
-      MainHeader.style.background = '#000'
+      MainHeader.style.top = '-100px'
     } else {
-      MainHeader.style.background = 'unset'
+      MainHeader.style.top = '0'
     }
     // Gsap
     if (activeIndex === 1) {
@@ -100,6 +101,14 @@ function SlideContainer() {
 
       if (window.innerWidth <= 361 && window.innerHeight <= 651) {
         gsap.set(truckImage, { x: '100%', y: '359%' })
+      } else if (window.innerWidth <= 381 && window.innerHeight <= 690) {
+        console.log('재조정 01')
+        gsap.set(truckImage, { x: '100%', y: '540px' })
+      } else if (window.innerWidth <= 381 && window.innerHeight <= 680) {
+        console.log('재조정')
+        gsap.set(truckImage, { x: '100%', y: '525px' })
+      } else if (window.innerWidth <= 381 && window.innerHeight <= 781) {
+        gsap.set(truckImage, { x: '100%', y: '630px' })
       } else if (window.innerWidth <= 361 && window.innerHeight <= 781) {
         gsap.set(truckImage, { x: '100%', y: '459%' })
       } else if (window.innerWidth <= 361) {
@@ -108,9 +117,23 @@ function SlideContainer() {
       } else if (window.innerWidth <= 376) {
         console.log('376')
         gsap.set(truckImage, { x: '100%', y: '375%' })
-      } else if (window.innerWidth <= 391) {
+      } else if (window.innerWidth <= 380 && window.innerHeight >= 931) {
+        gsap.set(truckImage, { x: '100%', y: '800px' })
+        console.log('아이폰 14 프로')
+      } else if (window.innerWidth <= 380 && window.innerHeight <= 844) {
+        console.log('기록파악 -1 ')
+      } else if (window.innerWidth <= 380 && window.innerHeight <= 852) {
+        console.log('기록파악 -2 ')
+        gsap.set(truckImage, { x: '100%', y: '730px' })
+      } else if (window.innerWidth <= 380 && window.innerHeight <= 931) {
+        console.log('기록파악')
+        gsap.set(truckImage, { x: '100%', y: '790px' })
+      } else if (window.innerWidth <= 391 && window.innerHeight >= 930) {
         console.log('391')
         gsap.set(truckImage, { x: '100%', y: '490%' })
+      } else if (window.innerWidth <= 394 && window.innerHeight <= 661) {
+        console.log('661')
+        gsap.set(truckImage, { x: '100%', y: '520px' })
       } else if (window.innerWidth <= 394 && window.innerHeight <= 853) {
         console.log('391, 852')
         gsap.set(truckImage, { x: '100%', y: '500%' })
@@ -139,11 +162,38 @@ function SlideContainer() {
           duration: 3,
         })
       }
+
+      // 아이폰 14 프로
+      else if (window.innerWidth <= 394 && window.innerHeight <= 660) {
+        t2.to(truckImage, {
+          x: '-100%',
+          y: '305px',
+          duration: 3,
+        })
+      } else if (window.innerWidth <= 381 && window.innerHeight <= 690) {
+        t2.to(truckImage, {
+          x: '-100%',
+          y: '335px',
+          duration: 3,
+        })
+      } else if (window.innerWidth <= 381 && window.innerHeight <= 670) {
+        t2.to(truckImage, {
+          x: '-100%',
+          y: '310px',
+          duration: 3,
+        })
+      }
       // 갤럭시 23
       else if (window.innerWidth <= 361 && window.innerHeight <= 781) {
         t2.to(truckImage, {
           x: '-100%',
           y: '309%',
+          duration: 3,
+        })
+      } else if (window.innerWidth <= 361 && window.innerHeight <= 901) {
+        t2.to(truckImage, {
+          x: '-100%',
+          y: '540px',
           duration: 3,
         })
       }
@@ -154,28 +204,55 @@ function SlideContainer() {
           y: '280%',
           duration: 3,
         })
-        // 아이폰 6/7/8
-      } else if (window.innerWidth <= 376) {
+      }
+      // 아이폰 6/7/8
+      else if (window.innerWidth <= 376) {
         t2.to(truckImage, {
           x: '-100%',
           y: '225%',
           duration: 3,
         })
-        // 아이폰 13
-      } else if (window.innerWidth <= 391) {
+      } else if (window.innerWidth <= 380 && window.innerHeight >= 931) {
+        t2.to(truckImage, {
+          x: '-100%',
+          y: '580px',
+          duration: 3,
+        })
+      } else if (window.innerWidth <= 380 && window.innerHeight <= 844) {
+        t2.to(truckImage, {
+          x: '-100%',
+          y: '500px',
+          duration: 3,
+        })
+      } else if (window.innerWidth <= 380 && window.innerHeight <= 852) {
+        t2.to(truckImage, {
+          x: '-100%',
+          y: '490px',
+          duration: 3,
+        })
+      } else if (window.innerWidth <= 380 && window.innerHeight <= 931) {
+        t2.to(truckImage, {
+          x: '-100%',
+          y: '578px',
+          duration: 3,
+        })
+      }
+      // 아이폰 13
+      else if (window.innerWidth <= 391) {
         t2.to(truckImage, {
           x: '-100%',
           y: '349%',
           duration: 3,
         })
-        // 갤럭시 S20 울트
-      } else if (window.innerWidth <= 394 && window.innerHeight <= 853) {
+      }
+
+      // 갤럭시 S20 울트
+      else if (window.innerWidth <= 394 && window.innerHeight <= 853) {
         t2.to(truckImage, {
           x: '-100%',
           y: '353%',
           duration: 3,
         })
-        // 아이폰 14 프로
       } else if (window.innerWidth <= 413) {
         t2.to(truckImage, {
           x: '-100%',

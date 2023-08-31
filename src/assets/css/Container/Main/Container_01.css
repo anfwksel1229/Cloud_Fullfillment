@@ -14,7 +14,7 @@
 }
 #Container01 .Main_title {
   z-index: 9;
-  font-family: 'Pretendard-Regular';
+
   font-size: 56px;
   font-weight: 700;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 쉐도우 효과 */
@@ -27,7 +27,7 @@
 }
 #Container01 .Sub_title {
   color: #fff;
-  font-family: 'Pretendard-Regular';
+
   font-size: 24px;
   font-weight: 400;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 쉐도우 효과 */
@@ -45,7 +45,7 @@
 #Container01 .Link_btn .Solution {
   margin-right: 7px;
   z-index: 9;
-  font-family: 'Pretendard-Regular';
+
   background: #31d2b5;
   font-size: 16px;
   font-weight: 700;
@@ -58,7 +58,7 @@
   z-index: 9;
   margin-left: 7px;
   background: #fff;
-  font-family: 'Pretendard-Regular';
+
   font-size: 16px;
   font-weight: 700;
   padding: 14px 49px 15px 50px;

@@ -63,24 +63,24 @@ function Header() {
     }
   }, [])
 
-  // 링크마다 스크롤
-  window.addEventListener('scroll', function () {
-    const link = window.location.pathname // 현재 페이지 경로를 가져옴
+  // // 링크마다 스크롤
+  // window.addEventListener('scroll', function () {
+  //   const link = window.location.pathname // 현재 페이지 경로를 가져옴
 
-    const Header = document.querySelector('#Header')
+  //   const Header = document.querySelector('#Header')
 
-    // console.log('스크롤값이용 ::', window.scrollY)
-    const scrollPosition = window.scrollY
-    const threshold = 450 // 스크롤 위치가 이 값 이상일 때 스타일을 변경
-    if (link === '/solution' || link === '/benefit' || link === '/introduce') {
-      // '/solution' 링크에 해당하는 경우
-      if (scrollPosition >= threshold) {
-        Header.style.background = '#000'
-      } else {
-        Header.style.background = 'unset' // 기본 스타일로 변경
-      }
-    }
-  })
+  //   // console.log('스크롤값이용 ::', window.scrollY)
+  //   const scrollPosition = window.scrollY
+  //   const threshold = 450 // 스크롤 위치가 이 값 이상일 때 스타일을 변경
+  //   if (link === '/solution' || link === '/benefit' || link === '/introduce') {
+  //     // '/solution' 링크에 해당하는 경우
+  //     if (scrollPosition >= threshold) {
+  //       Header.style.background = '#000'
+  //     } else {
+  //       Header.style.background = 'unset' // 기본 스타일로 변경
+  //     }
+  //   }
+  // })
   const isNarrowScreen = windowWidth <= 769
 
   const handleMenuClick = (index, link, event) => {

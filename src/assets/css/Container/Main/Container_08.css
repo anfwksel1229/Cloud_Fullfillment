@@ -38,7 +38,7 @@
   color: #fff;
   font-size: 40px;
   font-weight: 700;
-  font-family: 'Pretendard-Regular';
+
   text-align: end;
 }
 #Container08 .Container08_wrap .Title_wrap .Main_title span {
@@ -46,7 +46,7 @@
 }
 #Container08 .Container08_wrap .Title_wrap .Sub_title {
   font-weight: 700;
-  font-family: 'Pretendard-Regular';
+
   font-size: 18px;
   color: #fff;
   text-align: end;
@@ -76,6 +76,7 @@
   #Container08 .Container08_wrap .Title_wrap .Main_title {
     font-size: 26px;
     text-align: end;
+    margin-top: 0;
   }
   #Container08 .Container08_wrap .Title_wrap .Sub_title {
     text-align: end;

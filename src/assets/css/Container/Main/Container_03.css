@@ -6,7 +6,6 @@
   font-size: 40px;
   font-weight: 700;
   color: #fff;
-  font-family: 'Pretendard-Regular';
 }
 #Container03 .icon_container ul {
   display: flex;
@@ -24,7 +23,6 @@
   font-size: 30px;
   font-weight: 700;
   color: #fff;
-  font-family: 'Pretendard-Regular';
 }
 #Container03 .icon_container ul li div p span {
   color: #31d2b5;
@@ -55,7 +53,8 @@
   }
   #Container03 .Main_title {
     font-size: 29px;
-    margin-top: 70px;
+    /* margin-top: 70px; */
+    margin-top: 10%;
   }
   #Container03 .icon_container ul li div p {
     font-size: 20px;

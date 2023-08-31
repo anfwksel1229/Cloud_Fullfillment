@@ -4,7 +4,7 @@
 }
 #Container02 .Main_title {
   font-size: 44px;
-  font-family: 'Pretendard-Regular';
+
   font-weight: 700;
 }
 #Container02 .Main_title span.gradient {
@@ -18,7 +18,7 @@
 }
 #Container02 .Sub_title {
   color: #71b9b5e5;
-  font-family: 'Pretendard-Regular';
+
   font-size: 18px;
   font-weight: 500;
 }
@@ -35,7 +35,6 @@
   font-size: 32.94px;
   font-weight: 700;
   margin-right: 37px;
-  font-family: 'Pretendard-Regular';
 }
 #Container02 .Soultion > p:nth-child(3) {
   background: linear-gradient(to right, #31d2b5, #ffffff);
@@ -45,7 +44,6 @@
   font-size: 32.94px;
   font-weight: 700;
   margin-left: 33px;
-  font-family: 'Pretendard-Regular';
 }
 #Container02 .Soultion .Cycle {
   background-image: url('../../../images/Main/Cycle.png');
@@ -64,9 +62,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  font-family: 'Pretendard-Regular';
 }
 @media (max-width: 769px) {
+  #Container02 {
+    width: 90%;
+  }
   #Container02 .Main_title {
     font-size: 29px;
     margin: 0;
@@ -81,7 +81,7 @@
 
   #Container02 .Soultion .Cycle {
     background-image: url('../../../images/Main/MobCycle.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;

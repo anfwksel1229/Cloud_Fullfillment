@@ -17,7 +17,7 @@
   color: #fff;
   font-size: 40px;
   font-weight: 700;
-  font-family: 'Pretendard-Regular';
+
   text-align: start;
 }
 #Container06 .Container06_wrap .Title_wrap .Main_title span {
@@ -53,5 +53,10 @@
   #Container06 .add_text {
     position: unset;
     transform: unset;
+  }
+}
+@media (min-height: 660px) {
+  #Container06 .Container06_wrap .Title_wrap .Main_title {
+    margin-top: 0;
   }
 }

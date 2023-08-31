@@ -19,7 +19,6 @@
   /* font-weight: 400; */
   font-weight: 700;
   text-align: start;
-  font-family: 'Pretendard-Regular';
 }
 #Container04 .Container04_wrap .Title_wrap .Main_title span {
   color: #31d2b5;
@@ -30,7 +29,6 @@
   font-size: 18px;
   color: #fff;
   text-align: start;
-  font-family: 'Pretendard-Regular';
 }
 @media (max-width: 769px) {
   #Container04 {
@@ -45,12 +43,12 @@
   #Container04 .Container04_wrap .Title_wrap .Main_title {
     font-size: 27px;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 0;
   }
   #Container04 .Container04_wrap .Title_wrap .Sub_title {
     text-align: center;
     font-size: 16px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
   #Container04 > div > img {
     width: auto;

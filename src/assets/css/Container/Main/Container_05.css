@@ -19,14 +19,13 @@
   font-size: 40px;
   font-weight: 700;
   text-align: end;
-  font-family: 'Pretendard-Regular';
 }
 #Container05 .Container05_wrap .Title_wrap .Main_title span {
   color: #31d2b5;
 }
 #Container05 .Container05_wrap .Title_wrap .Sub_title {
   font-weight: 700;
-  font-family: 'Pretendard-Regular';
+
   font-size: 18px;
   color: #fff;
   text-align: end;
@@ -34,7 +33,7 @@
 #Container05 .add_text {
   color: #fff;
   font-size: 14px;
-  font-family: 'Pretendard-Regular';
+
   font-weight: 300;
   margin-top: 50px;
   position: absolute;
